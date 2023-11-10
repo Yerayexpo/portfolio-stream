@@ -6,7 +6,7 @@ st.set_page_config(page_title='Yeray Exposito',
                    layout="centered",
 )
 
-st.markdown("<h1 style='text-align: center; color: ##4f1418;'>Portfolio de un Data Scientist 🔎</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #af2222;'>Portfolio de un Data Scientist 🔎</h1>", unsafe_allow_html=True)
 
 index = 0
 enlace_linkedin = '<a href="https://linkedin.com/in/yeray-exposito"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" width="30" height="30"></a>'
@@ -28,6 +28,7 @@ st.markdown("""
               border-radius: 50%;
               overflow: hidden;
               box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+              border: 2px solid #af2222;
           }
           
           .circle-image img {
