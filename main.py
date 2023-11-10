@@ -6,7 +6,7 @@ st.set_page_config(page_title='Yeray Exposito',
                    layout="centered"
 )
 
-st.markdown("<h1 style='text-align: center; color: #b90d13;'>Portfolio de un Data Scientist 🔎</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: ##4f1418;'>Portfolio de un Data Scientist 🔎</h1>", unsafe_allow_html=True)
 
 index = 0
 enlace_linkedin = '<a href="https://linkedin.com/in/yeray-exposito"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" width="30" height="30"></a>'
@@ -15,6 +15,13 @@ enlaces_unidos = enlace_linkedin + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 st.markdown("""
         <style>
+            body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
           .circle-image {
               width: 200px;
               height: 200px;
@@ -132,16 +139,13 @@ elif option == '📔 Proyectos':
     with col1.expander('Apis'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/73eb85b5-c7f8-4328-93e6-ae9caf79f730/Leonardo_Diffusion_XL_I_want_a_background_of_a_webcam_that_rec_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Flask con 3 endpoints diferentes:
-- Mapa: Obtiene la ruta hasta el destino estipulado
-- Imagen: Crea una imagen a raiz de un prompt
-- Bad lenguage: Control de palabras malsonantes
+        st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imagenes y otro de analisis de texto.
                  """)
     with col2.expander('Webscrapping  (Work in Progress)'):
         st.write("""Obtención de datos de diferentes paginas web mediante Selenium y BeautifulSoup.
                  
                  """)
-    with col3.expander('Sherlok'):
+    with col3.expander('Sherlock'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2182e25d-ed10-4993-8e3a-b6fb6224c05c/Leonardo_Diffusion_XL_A_chaotic_and_cluttered_office_filled_wi_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://sherlock.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
         st.write("""Pagina para buscar usuarios por nickname/username que devuelve una lista de todos los sitios conicidentes
