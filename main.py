@@ -44,7 +44,7 @@ with st.sidebar:
     col1, col2, col3 = st.columns([1, 4, 1])
     with col2:
         texto = [
-            "Yeray Exposito Andreu",
+            "Yeray Expósito",
             "Junior Data Scientist",
             "Contacta 👇"
         ]
@@ -58,36 +58,43 @@ with st.sidebar:
         </div>
         <div style='text-align: center;'>{enlaces_unidos}</div><br>""",unsafe_allow_html=True)
     option = st.selectbox(
-        'Selecciona pagina',
-        ('🏠 Home','👀 Analisis', '📟 Dashboards', '📔 Proyectos','🎓 Certificados/Skills'),index=0)
+        'Selecciona página',
+        ('🏠 Home','👀 Análisis', '📟 Dashboards', '📔 Proyectos','🎓 Certificados/Skills'),index=0)
 
 if option == '🏠 Home':
     st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/64e63425-c6db-488b-9325-f874d6845b53/Leonardo_Diffusion_XL_I_want_a_background_of_a_data_Science_3.jpg")
     st.write("""
-           ¡Hola! Bienvenido a mi Portfolio. Soy Junior Data Scientist apasionado por aprender nuevas tecnologías y progresar en el ámbito laboral. Actualmente, tengo la oportunidad de trabajar como Teacher Assistant en The Bridge Digital Talent Accelerator, una experiencia que me ha enriquecido y me mantiene al tanto de las últimas novedades tecnológicas.
+           ¡Hola! Bienvenido a mi Portfolio. Soy Junior Data Scientist apasionado por aprender nuevas tecnologías y progresar en el ámbito laboral. Actualmente, 
+             tengo la oportunidad de trabajar como Teacher Assistant en The Bridge Digital Talent Accelerator, una experiencia que me ha enriquecido y 
+             me mantiene al tanto de las últimas novedades tecnológicas.
 
-            En esta página, encontrarás una variedad de proyectos relacionados con machine learning, que incluyen modelos, visualizaciones y procesamiento de datos. Además, he desarrollado dashboards informativos para diferentes aplicaciones y proyectos, así como implementaciones con Streamlit que ofrecen diversas funcionalidades.
+            En esta página, encontrarás una variedad de proyectos relacionados con machine learning, que incluyen modelos, 
+             visualizaciones y procesamiento de datos. Además, he desarrollado dashboards informativos para diferentes aplicaciones y proyectos, 
+             así como implementaciones con Streamlit que ofrecen diversas funcionalidades.
 
-            Te invito a explorar mi trabajo y descubrir las habilidades y conocimientos que he adquirido a lo largo de mi carrera. ¡Espero que encuentres inspiración en mis proyectos y que podamos aprender juntos en este emocionante viaje hacia el mundo del Data Science!
+            Te invito a explorar mi trabajo y descubrir las habilidades y conocimientos que he adquirido a lo largo de mi carrera. 
+             ¡Espero que encuentres inspiración en mis proyectos y que podamos aprender juntos en este emocionante viaje hacia el mundo del Data Science!
     """)
 
-elif option == '👀 Analisis':
+elif option == '👀 Análisis':
     st.markdown("<h3 style='text-align: center;'>Analisis 👀 </h1>", unsafe_allow_html=True)
     col1,col2,col3 = st.columns(3)
     with col1.expander('Board Games'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/c792afa7-cb65-49b8-a964-11c2893e7ec6/Leonardo_Diffusion_XL_I_want_a_background_of_a_boardgame_1.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/BoardGame-Analysis" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""En este analisis el objetivo fue practicar la obtencion, transformación y visualización de los datos para entrenar un modelo predictivo sobre la popularidad de los juegos.
+        st.write("""En este análisis el objetivo fue practicar la obtención, transformación y visualización de los datos para entrenar un modelo predictivo sobre la popularidad 
+                 de los juegos.
                  """)
-    with col2.expander('Shishas  (Work in Progress)'):
+    with col2.expander('Shishas'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2b2ae344-ede7-4b2f-be4c-9e589e57f12e/Leonardo_Diffusion_XL_Backgroun_of_a_shisha_data_analysis_1.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/Shishas align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""La empresa estaba interesada en conseguir un modelo de recomendaciones de tabacos para usuarios. Tras el analisis pudimos detectar las claves más importantes y afinar el modelo.
-                 """)
+        st.write("""La empresa estaba interesada en conseguir un modelo de recomendaciones de tabacos para usuarios. 
+                 Tras el análisis pudimos detectar las claves más importantes y afinar el modelo.
+                 (Work in Progress) """)
     with col3.expander('Heart Disease'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/01b70ab3-47d0-4782-b7e7-cadcb6844ca8/Leonardo_Diffusion_XL_I_want_a_background_of_a_heart_disease_a_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/Heart-Disease" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Analisis docente centrado en la prediccion de personas con probabilidades más elevadas de sufrir un ataque al corazón.
+        st.write("""Análisis docente centrado en la predicción de personas con probabilidades más elevadas de sufrir un ataque al corazón.
                 """)
 elif option == '📟 Dashboards':
     st.markdown("<h3 style='text-align: center;'>Dashboards 📟 </h1>", unsafe_allow_html=True)
@@ -110,11 +117,11 @@ elif option == '📟 Dashboards':
         if col4.button('Eventos'):
             index = 3
         col4.write('')
-        st.write(f"""Con este dahsboard podemos ver toda la informacion de los eventos y los alumnos de nuestra app.
+        st.write(f"""Con este dahsboard podemos ver toda la información de los eventos y los alumnos de nuestra app.
                  
-- Main: Usuarios activos a tiempo real, cantidad de alumnos por curso y evento más próximo
+- Main: Usuarios activos a tiempo real, cantidad de alumnos por curso y evento más próximo.
 - Alumnos: Filtrado de alumnos con todos los datos de cada uno de ellos, idioma, intereses...
-- Eventos: Mapa con ubicación fecha y cantidad de alumnos que están apuntados al evento
+- Eventos: Mapa con ubicación fecha y cantidad de alumnos que están apuntados al evento.
                 """)
         imagen_path = imagenes[index]
         imagen = Image.open(imagen_path)
@@ -122,15 +129,15 @@ elif option == '📟 Dashboards':
 
     with st.expander('Board Games'):
         st.image("img/dash_games.png")
-        st.write("""Dashboard informativo sobre los juegos más populares y mejor valorados por la plataforma BoardGameGeek, dispone de :
+        st.write("""Dashboard informativo sobre los juegos más populares y mejor valorados por la plataforma BoardGameGeek, dispone de:
                  
-- Filtro para poder ver las carateristicas de los juegos más en profundidad
-- Ranking top de 5 juegos mejor valorados en la selección actual
-- Cantidad de juegos, usuarios en posesion del juego y votos    
+- Filtro para poder ver las caraterísticas de los juegos más en profundidad.
+- Ranking top de 5 juegos mejor valorados en la selección actual.
+- Cantidad de juegos, usuarios en posesión del juego y votos.    
                  """)
 
     # with st.expander('otro'):
-    #     st.write("""En este analisis el objetivo fue practicar la obtencion, transformación y visualización de los datos.
+    #     st.write("""En este análisis el objetivo fue practicar la obtención, transformación y visualización de los datos.
                  
     #              """)
 
@@ -140,16 +147,16 @@ elif option == '📔 Proyectos':
     with col1.expander('Apis'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/73eb85b5-c7f8-4328-93e6-ae9caf79f730/Leonardo_Diffusion_XL_I_want_a_background_of_a_webcam_that_rec_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imagenes y otro de analisis de texto.
+        st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imágenes y otro de análisis de texto.
                  """)
     with col2.expander('Webscrapping  (Work in Progress)'):
-        st.write("""Obtención de datos de diferentes paginas web mediante Selenium y BeautifulSoup.
+        st.write("""Obtención de datos de diferentes páginas web mediante Selenium y BeautifulSoup.
                  
                  """)
     with col3.expander('Sherlock'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2182e25d-ed10-4993-8e3a-b6fb6224c05c/Leonardo_Diffusion_XL_A_chaotic_and_cluttered_office_filled_wi_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://sherlock.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Pagina para buscar usuarios por nickname/username que devuelve una lista de todos los sitios conicidentes
+        st.write("""Página para buscar usuarios por nickname/username que devuelve una lista de todos los sitios coincidentes.
                  """)
 
 elif option == '🎓 Certificados/Skills':
