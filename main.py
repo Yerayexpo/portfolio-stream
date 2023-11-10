@@ -56,7 +56,7 @@ with st.sidebar:
 if option == '🏠 Home':
     st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/64e63425-c6db-488b-9325-f874d6845b53/Leonardo_Diffusion_XL_I_want_a_background_of_a_data_Science_3.jpg")
     st.write("""
-           ¡Hola! Bienvenido a mi Portfolio. Soy un Junior Data Scientist apasionado por aprender nuevas tecnologías y progresar en el ámbito laboral. Actualmente, tengo la oportunidad de trabajar como Teacher Assistant en The Bridge Digital Talent Accelerator, una experiencia que me ha enriquecido y me mantiene al tanto de las últimas novedades tecnológicas.
+           ¡Hola! Bienvenido a mi Portfolio. Soy Junior Data Scientist apasionado por aprender nuevas tecnologías y progresar en el ámbito laboral. Actualmente, tengo la oportunidad de trabajar como Teacher Assistant en The Bridge Digital Talent Accelerator, una experiencia que me ha enriquecido y me mantiene al tanto de las últimas novedades tecnológicas.
 
             En esta página, encontrarás una variedad de proyectos relacionados con machine learning, que incluyen modelos, visualizaciones y procesamiento de datos. Además, he desarrollado dashboards informativos para diferentes aplicaciones y proyectos, así como implementaciones con Streamlit que ofrecen diversas funcionalidades.
 
@@ -148,6 +148,19 @@ elif option == '📔 Proyectos':
                  """)
 
 elif option == '🎓 Certificados/Skills':
+    st.markdown(
+            """
+        <style>
+        button {
+        border-radius: 50%;
+        height: 3em;
+        width: 3em;
+        }
+        </style>
+        """,
+            unsafe_allow_html=True,
+        )
+
     col1,col2 = st.columns(2)
     with col1:
         st.markdown("<h3 style='text-align: center;'>Skills ⚒️</h1>", unsafe_allow_html=True)
@@ -157,19 +170,19 @@ elif option == '🎓 Certificados/Skills':
                 'Postgress','Mongodb','BFSoup','Flask','Postman']
         columns1 = st.columns(3)
         for c in range(3):
-            columns1[c].button(skills[c])
+            columns1[c].button(skills[c],use_container_width=True)
         columns2 = st.columns(3)
         for c in range(3):
-            columns2[c].button(skills[c+3])
+            columns2[c].button(skills[c+3],use_container_width=True)
         columns3 = st.columns(3)
         for c in range(3):
-            columns3[c].button(skills[c+6])
+            columns3[c].button(skills[c+6],use_container_width=True)
         columns3 = st.columns(3)
         for c in range(3):
-            columns3[c].button(skills[c+9])
+            columns3[c].button(skills[c+9],use_container_width=True)
         columns3 = st.columns(3)
         for c in range(3):
-            columns3[c].button(skills[c+12])
+            columns3[c].button(skills[c+12],use_container_width=True)
     with col2:
         st.markdown("<h3 style='text-align: center;'>Certificados 📖</h1>", unsafe_allow_html=True)
         st.markdown("""
