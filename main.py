@@ -3,7 +3,8 @@ from streamlit.components.v1 import components
 from PIL import Image
 st.set_page_config(page_title='Yeray Exposito', 
                    page_icon='✌️', 
-                   layout="centered"
+                   layout="centered",
+                   theme="dark"
 )
 
 st.markdown("<h1 style='text-align: center; color: ##4f1418;'>Portfolio de un Data Scientist 🔎</h1>", unsafe_allow_html=True)
