@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit.components.v1 import components
 from PIL import Image
+
 st.set_page_config(page_title='Yeray Exposito', 
                    page_icon='✌️', 
                    layout="centered",
@@ -173,7 +174,7 @@ elif option == '🎓 Certificados/Skills':
             unsafe_allow_html=True,
         )
 
-    col1,col2 = st.columns(2)
+    col1,col2,col3 = st.columns([3,1,2])
     with col1:
         st.markdown("<h3 style='text-align: center;'>Skills ⚒️</h1>", unsafe_allow_html=True)
 
@@ -195,7 +196,7 @@ elif option == '🎓 Certificados/Skills':
         columns3 = st.columns(3)
         for c in range(3):
             columns3[c].button(skills[c+12],use_container_width=True)
-    with col2:
+    with col3:
         st.markdown("<h3 style='text-align: center;'>Certificados 📖</h1>", unsafe_allow_html=True)
         st.markdown("""
                 ##### Data Science
