@@ -150,8 +150,10 @@ elif option == '📔 Proyectos':
         st.markdown("""<div style='text-align: center;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
         st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imágenes y otro de análisis de texto.
                  """)
-    with col2.expander('Webscrapping  (Work in Progress)'):
-        st.write("""Obtención de datos de diferentes páginas web mediante Selenium y BeautifulSoup.
+    with col2.expander('Amazon Webscrapping'):
+        st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/d5e618f3-3856-4385-bd7f-f1d6c80ddb4c/Leonardo_Diffusion_XL_I_want_a_background_of_a_webscrappgin_ap_0.jpg")
+        st.markdown("""<div style='text-align: center;'><a href="https://amazon-scrapp.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
+        st.write("""Obtención de datos de Amazon con buscador y filtro de precio.
                  
                  """)
     with col3.expander('Sherlock'):
