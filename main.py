@@ -51,7 +51,7 @@ with st.sidebar:
             "Contacta 👇"
         ]
         st.markdown(f"""<div class="circle-image">
-        <img src="https://media.licdn.com/dms/image/D4D03AQE_BiflBzJHsg/profile-displayphoto-shrink_800_800/0/1682542245244?e=1704931200&v=beta&t=51swToxLFOJtRqIRUsbsN4YzXgzX-F2jYenRyyx-xMg" alt="Yo">
+        <img src="https://media.licdn.com/dms/image/D4D03AQE_BiflBzJHsg/profile-displayphoto-shrink_200_200/0/1682542245244?e=1710979200&v=beta&t=ogKi8jZD1SIuxL0e3aAKi0ylo85JlWHkkbYTNaiQENM" alt="Yo">
         </div>            
         <div style='text-align: center;'>
                 <h1>{texto[0]}</h1>
