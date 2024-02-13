@@ -83,19 +83,19 @@ elif option == '👀 Análisis':
     col1,col2,col3 = st.columns(3)
     with col1.expander('Board Games'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/c792afa7-cb65-49b8-a964-11c2893e7ec6/Leonardo_Diffusion_XL_I_want_a_background_of_a_boardgame_1.jpg")
-        st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/BoardGame-Analysis" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""En este análisis el objetivo fue crear un modelo predictivo sobre la popularidad o atractivo de un juego de mesa""")
+        st.markdown("""<div style='text-align: justify;'><a href="https://github.com/Yerayexpo/BoardGame-Analysis" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
+        st.markdown("""<div style='text-align: justify;'>En este análisis el objetivo fue crear un modelo predictivo sobre la popularidad o atractivo de un juego de mesa</div>""",unsafe_allow_html=True)
     with col2.expander('Shishas'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2b2ae344-ede7-4b2f-be4c-9e589e57f12e/Leonardo_Diffusion_XL_Backgroun_of_a_shisha_data_analysis_1.jpg")
-        st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/Shishas align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""La empresa estaba interesada en conseguir un modelo de recomendaciones de tabacos para usuarios. 
+        st.markdown("""<div style='text-align: justify;'><a href="https://github.com/Yerayexpo/Shishas align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
+        st.markdown("""<div style='text-align: justify;'>La tarea principal en este proyecto es conseguir un modelo para recomendar tabacos a usuarios en base a sus preferencias. 
                  Tras el análisis pudimos detectar las claves más importantes y afinar el modelo.
-                 (Work in Progress) """)
+                 (Work in Progress)</div> """,unsafe_allow_html=True)
     with col3.expander('Heart Disease'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/01b70ab3-47d0-4782-b7e7-cadcb6844ca8/Leonardo_Diffusion_XL_I_want_a_background_of_a_heart_disease_a_0.jpg")
-        st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/Heart-Disease" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Análisis docente centrado en la predicción de personas con probabilidades más elevadas de sufrir un ataque al corazón.
-                """)
+        st.markdown("""<div style='text-align: justify;'><a href="https://github.com/Yerayexpo/Heart-Disease" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
+        st.markdown("""<div style='text-align: justify;'>Análisis docente centrado en la predicción de personas con más probabilidades de sufrir un ataque al corazón.
+                """,unsafe_allow_html=True)
 elif option == '📟 Dashboards':
     st.markdown("<h3 style='text-align: center;'>Dashboards 📟 </h1>", unsafe_allow_html=True)
    
@@ -146,9 +146,9 @@ elif option == '📔 Proyectos':
     col1,col2 = st.columns(2)
     with col1.expander('Apis'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/73eb85b5-c7f8-4328-93e6-ae9caf79f730/Leonardo_Diffusion_XL_I_want_a_background_of_a_webcam_that_rec_0.jpg")
-        st.markdown("""<div style='text-align: center;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imágenes, otro analizador de leguaje malsonante y un geolocalizador conectado a la api de google maps para establecer rutas.
-                 """)
+        st.markdown("""<div style='text-align: justify;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
+        st.markdown("""<div style='text-align: justify;'>Flask con 3 endpoints diferentes, un modelo generativo de imágenes, otro analizador de leguaje malsonante y un geolocalizador conectado a la api de google maps para establecer rutas.
+                 """,unsafe_allow_html=True)
     # with col3.expander('Amazon Webscraping'):
     #     st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/d5e618f3-3856-4385-bd7f-f1d6c80ddb4c/Leonardo_Diffusion_XL_I_want_a_background_of_a_webscrappgin_ap_0.jpg")
     #     st.markdown("""<div style='text-align: center;'><a href="https://amazon-scrapp.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
@@ -157,9 +157,9 @@ elif option == '📔 Proyectos':
     #              """)
     with col2.expander('Sherlock'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2182e25d-ed10-4993-8e3a-b6fb6224c05c/Leonardo_Diffusion_XL_A_chaotic_and_cluttered_office_filled_wi_0.jpg")
-        st.markdown("""<div style='text-align: center;'><a href="https://sherlock.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Página para buscar usuarios por nickname/username que devuelve una lista con todas las coincidencias.
-                 """)
+        st.markdown("""<div style='text-align: justify;'><a href="https://sherlock.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
+        st.markdown("""<div style='text-align: justify;'>Página para buscar usuarios por nickname/username que devuelve una lista con todas las coincidencias.
+                 """,unsafe_allow_html=True)
 
 elif option == '🎓 Certificados/Skills':
     st.markdown(
