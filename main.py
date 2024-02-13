@@ -107,16 +107,16 @@ elif option == '📟 Dashboards':
         imagen_actual = st.image([])
 
         col1, col2, col3, col4 = st.columns(4)
-        if col1.button('Home'):
+        if col1.button('Home',use_container_width=True):
             index = 0
         col1.write('')
-        if col2.button('Main'):
+        if col2.button('Main',use_container_width=True):
             index = 1
         col2.write('')
-        if col3.button('Alumnos'):
+        if col3.button('Alumnos',use_container_width=True):
             index = 2
         col3.write('')
-        if col4.button('Eventos'):
+        if col4.button('Eventos',use_container_width=True):
             index = 3
         col4.write('')
         st.write(f"""Con este dahsboard podemos ver toda la información de los eventos y los alumnos de nuestra app.
