@@ -84,9 +84,7 @@ elif option == '👀 Análisis':
     with col1.expander('Board Games'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/c792afa7-cb65-49b8-a964-11c2893e7ec6/Leonardo_Diffusion_XL_I_want_a_background_of_a_boardgame_1.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/BoardGame-Analysis" align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
-        st.write("""En este análisis el objetivo fue practicar la obtención, transformación y visualización de los datos para entrenar un modelo predictivo sobre la popularidad 
-                 de los juegos.
-                 """)
+        st.write("""En este análisis el objetivo fue crear un modelo predictivo sobre la popularidad o atractivo de un juego de mesa""")
     with col2.expander('Shishas'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2b2ae344-ede7-4b2f-be4c-9e589e57f12e/Leonardo_Diffusion_XL_Backgroun_of_a_shisha_data_analysis_1.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yerayexpo/Shishas align=>Ir al Repositorio</a></div><br>""",unsafe_allow_html=True)
@@ -119,7 +117,7 @@ elif option == '📟 Dashboards':
         if col4.button('Eventos',use_container_width=True):
             index = 3
         col4.write('')
-        st.write(f"""Con este dahsboard podemos ver toda la información de los eventos y los alumnos de nuestra app.
+        st.write(f"""Con este dahsboard podemos ver toda la información de los alumnos y eventos de nuestra app.
                  
 - Main: Usuarios activos a tiempo real, cantidad de alumnos por curso y evento más próximo.
 - Alumnos: Filtrado de alumnos con todos los datos de cada uno de ellos, idioma, intereses...
@@ -149,7 +147,7 @@ elif option == '📔 Proyectos':
     with col1.expander('Apis'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/73eb85b5-c7f8-4328-93e6-ae9caf79f730/Leonardo_Diffusion_XL_I_want_a_background_of_a_webcam_that_rec_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imágenes, otro analizador de leguaje malsonante y un geolocalizador conectado a google maps para establecer rutas.
+        st.write("""Flask con 3 endpoints diferentes, un modelo generativo de imágenes, otro analizador de leguaje malsonante y un geolocalizador conectado a la api de google maps para establecer rutas.
                  """)
     # with col3.expander('Amazon Webscraping'):
     #     st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/d5e618f3-3856-4385-bd7f-f1d6c80ddb4c/Leonardo_Diffusion_XL_I_want_a_background_of_a_webscrappgin_ap_0.jpg")
@@ -160,7 +158,7 @@ elif option == '📔 Proyectos':
     with col2.expander('Sherlock'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2182e25d-ed10-4993-8e3a-b6fb6224c05c/Leonardo_Diffusion_XL_A_chaotic_and_cluttered_office_filled_wi_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://sherlock.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Página para buscar usuarios por nickname/username que devuelve una lista de todos los sitios coincidentes.
+        st.write("""Página para buscar usuarios por nickname/username que devuelve una lista con todas las coincidencias.
                  """)
 
 elif option == '🎓 Certificados/Skills':
