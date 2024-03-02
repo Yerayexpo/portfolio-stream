@@ -149,10 +149,10 @@ elif option == '📔 Proyectos':
         st.markdown("""<div style='text-align: justify;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
         st.markdown("""<div style='text-align: justify;'>Flask con 3 endpoints diferentes, un modelo generativo de imágenes, otro analizador de leguaje malsonante y un geolocalizador conectado a la api de google maps para establecer rutas.
                  """,unsafe_allow_html=True)
-    with col3.expander('Librerias'):
+    with col3.expander('Librerías'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/276c9cf3-1ab5-4a1c-a835-75cd1efdcefc/Default_book_store_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://librerias.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Pagina para conocer la mejor ubicación en Valencia para montar una libreria mediante información como la renta la población y la cantidad de librerias por distrito
+        st.write("""Streamlit para conocer la mejor ubicación en Valencia para montar una libreria mediante información como la renta la población y la cantidad de librerias por distrito.
                  
                  """)
     with col2.expander('Sherlock'):
