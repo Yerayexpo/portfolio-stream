@@ -143,7 +143,7 @@ elif option == '📟 Dashboards':
 
 elif option == '📔 Proyectos':
     st.markdown("<h3 style='text-align: center;'>Proyectos 📔</h1>", unsafe_allow_html=True)
-    col1,col2 = st.columns(2)
+    col1,col2,col3 = st.columns(3)
     with col1.expander('Apis'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/73eb85b5-c7f8-4328-93e6-ae9caf79f730/Leonardo_Diffusion_XL_I_want_a_background_of_a_webcam_that_rec_0.jpg")
         st.markdown("""<div style='text-align: justify;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
