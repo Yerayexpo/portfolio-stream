@@ -152,7 +152,7 @@ elif option == '📔 Proyectos':
     with col3.expander('Librerias'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/276c9cf3-1ab5-4a1c-a835-75cd1efdcefc/Default_book_store_0.jpg")
         st.markdown("""<div style='text-align: center;'><a href="https://librerias.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-        st.write("""Estudio para conocer la mejor ubicación en Valencia para montar una libreria.
+        st.write("""Pagina para conocer la mejor ubicación en Valencia para montar una libreria mediante información como la renta la población y la cantidad de librerias por distrito
                  
                  """)
     with col2.expander('Sherlock'):
