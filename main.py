@@ -149,12 +149,12 @@ elif option == '📔 Proyectos':
         st.markdown("""<div style='text-align: justify;'><a href="https://desafio-api.onrender.com/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
         st.markdown("""<div style='text-align: justify;'>Flask con 3 endpoints diferentes, un modelo generativo de imágenes, otro analizador de leguaje malsonante y un geolocalizador conectado a la api de google maps para establecer rutas.
                  """,unsafe_allow_html=True)
-    # with col3.expander('Amazon Webscraping'):
-    #     st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/d5e618f3-3856-4385-bd7f-f1d6c80ddb4c/Leonardo_Diffusion_XL_I_want_a_background_of_a_webscrappgin_ap_0.jpg")
-    #     st.markdown("""<div style='text-align: center;'><a href="https://amazon-scrapp.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
-    #     st.write("""Obtención de datos de Amazon con buscador y filtro de precio.
+    with col3.expander('Librerias'):
+        st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/276c9cf3-1ab5-4a1c-a835-75cd1efdcefc/Default_book_store_0.jpg")
+        st.markdown("""<div style='text-align: center;'><a href="https://librerias.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
+        st.write("""Estudio para conocer la mejor ubicación en Valencia para montar una libreria.
                  
-    #              """)
+                 """)
     with col2.expander('Sherlock'):
         st.image("https://cdn.leonardo.ai/users/d293df0e-cdbb-4d97-b51d-09f318b25c99/generations/2182e25d-ed10-4993-8e3a-b6fb6224c05c/Leonardo_Diffusion_XL_A_chaotic_and_cluttered_office_filled_wi_0.jpg")
         st.markdown("""<div style='text-align: justify;'><a href="https://sherlock.streamlit.app/" align=>Ver página</a></div><br>""",unsafe_allow_html=True)
