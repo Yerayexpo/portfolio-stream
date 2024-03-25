@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit.components.v1 import components
 from PIL import Image
+import base64
 
 st.set_page_config(page_title='Yeray Exposito', 
                    page_icon='✌️', 
@@ -45,13 +46,18 @@ st.markdown("""
 with st.sidebar:
     col1, col2, col3 = st.columns([1, 4, 1])
     with col2:
+
+        with open("img/yo.jpeg", "rb") as f:
+            image_bytes = f.read()
+            encoded_image = base64.b64encode(image_bytes).decode()
+
         texto = [
             "Yeray Expósito",
             "Junior Data Scientist",
             "Contacta 👇"
         ]
         st.markdown(f"""<div class="circle-image">
-        <img src="https://media.licdn.com/dms/image/D4D03AQE_BiflBzJHsg/profile-displayphoto-shrink_200_200/0/1682542245244?e=1710979200&v=beta&t=ogKi8jZD1SIuxL0e3aAKi0ylo85JlWHkkbYTNaiQENM" alt="Yo">
+        <img src="data:image/jpg;base64,{encoded_image}" alt="Yo">
         </div>            
         <div style='text-align: center;'>
                 <h1>{texto[0]}</h1>
